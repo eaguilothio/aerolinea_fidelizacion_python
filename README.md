@@ -29,10 +29,10 @@ para que la aerolínea sepa exactamente dónde y cómo invertir en retención.
 
 | Fase | Descripción |
 |------|-------------|
-| 0. Comprensión de los datos | Lectura y documentación de ambos archivos antes de tocarlos |
-| 1. Exploración y limpieza | Dimensión, tipos, nulos, duplicados, anomalías y normalización |
-| 2. Merge | Unión LEFT JOIN de actividad + perfil sobre `loyalty_number` |
-| 3. Perfil del cliente típico | Análisis univariable de `total_flights`, `clv` y `province` |
+| 0. Comprensión de los datos 
+| 1. Exploración y limpieza 
+| 2. Perfil del cliente típico | Análisis univariable de `total_flights`, `clv` y `province` |
+| 3. Merge | Unión LEFT JOIN de actividad + perfil sobre `loyalty_number` |
 | 4. Cliente más valioso | Cruce de `loyalty_card` con CLV, vuelos y distribución geográfica |
 
 ---
