@@ -55,10 +55,10 @@ para que la aerolínea sepa exactamente dónde y cómo invertir en retención.
 
 ## Principales hallazgos
 
-- **Actividad de vuelo:** La mayoría de clientes vuela poco cada mes. Hay un grupo reducido con actividad muy alta. La mediana es más representativa que la media.
+- **Actividad de vuelo:** el 50% de los clientes vuela 1 vez al mes. Hay un grupo reducido con actividad muy alta. 
 - **CLV:** Un grupo pequeño de clientes concentra una parte desproporcionada del valor del negocio. Son el segmento a retener.
 - **Geografía:** Ontario (32,3%) y British Columbia (26,3%) concentran el 58,6% de los clientes. El patrón se repite en todos los segmentos de tarjeta.
-- **Aurora vs. el resto:** Aurora tiene el CLV más alto, pero vuela prácticamente igual que Star y Nova (diferencia de 1-2 vuelos al mes). La razón para retener a Aurora es económica, no de frecuencia — los incentivos basados en vuelos no funcionan para este segmento.
+- **Aurora vs. el resto:** Aurora tiene el CLV más alto, pero vuela prácticamente igual que Star y Nova (diferencia de 1-2 vuelos al mes). La razón para retener a Aurora es económica, no de frecuencia. 
 - **Acciones recomendadas:**
-  - **Retener Aurora:** Beneficios premium — embarque prioritario, acceso a salas VIP y upgrades de clase sin coste. Atención personalizada, no masiva: el cliente VIP no quiere sentirse uno más.
+  - **Retener Aurora:** Beneficios premium. Atención personalizada (telefónica), no masiva (correos): el cliente VIP no quiere sentirse uno más.
   - **Hacer crecer Aurora:** Ontario y British Columbia concentran clientes en todos los niveles. Ofrecer una prueba temporal de beneficios Aurora a los clientes Star y Nova que alcancen un umbral de gasto.
