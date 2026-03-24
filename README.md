@@ -62,3 +62,8 @@ para que la aerolínea sepa exactamente dónde y cómo invertir en retención.
 - **Acciones recomendadas:**
   - **Retener Aurora:** Beneficios premium. Atención personalizada (telefónica), no masiva (correos): el cliente VIP no quiere sentirse uno más.
   - **Hacer crecer Aurora:** Ontario y British Columbia concentran clientes en todos los niveles. Ofrecer una prueba temporal de beneficios Aurora a los clientes Star y Nova que alcancen un umbral de gasto.
+
+---
+
+## Decisiones técnicas más importantes
+- Tiene sentido eliminar duplicados en exploración/limpieza, pero no después del merge. Al establecer la relación entre los diferentes csv en el merge con validate='m:1': 1 cliente puede volar más de una vez. Resultado del merge, mismo cliente en varios vuelos. Razón: en un merge 1:m, se duplica el lado One. Duplicados “lógicos” (NO son errores), por tanto no se eliminan. 
