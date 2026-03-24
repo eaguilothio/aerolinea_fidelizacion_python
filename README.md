@@ -37,6 +37,9 @@ para que la aerolínea sepa exactamente dónde y cómo invertir en retención.
 
 ---
 
+## Decisiones técnicas más importantes
+- Tiene sentido eliminar duplicados en exploración/limpieza, pero no después del merge. Al establecer la relación entre los diferentes csv en el merge con validate='m:1': 1 cliente puede volar más de una vez. Resultado del merge, mismo cliente en varios vuelos. Razón: en un merge 1:m, se duplica el lado One. Duplicados “lógicos” (NO son errores), por tanto no se eliminan. 
+
 ## Estructura del proyecto
 
 ```
@@ -49,21 +52,14 @@ para que la aerolínea sepa exactamente dónde y cómo invertir en retención.
 │   ├── profile_clean.csv              → Perfil limpio y columnas seleccionadas
 │   └── df_aerolinea.csv               → DataFrame unificado para el análisis
 └── aerolinea_archivo.ipynb            → Notebook principal
+
 ```
-
----
-
 ## Principales hallazgos
 
 - **Actividad de vuelo:** el 50% de los clientes vuela 1 vez al mes. Hay un grupo reducido con actividad muy alta. 
 - **CLV:** Un grupo pequeño de clientes concentra una parte desproporcionada del valor del negocio. Son el segmento a retener.
-- **Geografía:** Ontario (32,3%) y British Columbia (26,3%) concentran el 58,6% de los clientes. El patrón se repite en todos los segmentos de tarjeta.
+- **Geografía:** Ontario, British Columbia y Quebec concentran el 78% de los clientes. El patrón se repite en todos los segmentos de tarjeta.
 - **Aurora vs. el resto:** Aurora tiene el CLV más alto, pero vuela prácticamente igual que Star y Nova (diferencia de 1-2 vuelos al mes). La razón para retener a Aurora es económica, no de frecuencia. 
 - **Acciones recomendadas:**
   - **Retener Aurora:** Beneficios premium. Atención personalizada (telefónica), no masiva (correos): el cliente VIP no quiere sentirse uno más.
   - **Hacer crecer Aurora:** Ontario y British Columbia concentran clientes en todos los niveles. Ofrecer una prueba temporal de beneficios Aurora a los clientes Star y Nova que alcancen un umbral de gasto.
-
----
-
-## Decisiones técnicas más importantes
-- Tiene sentido eliminar duplicados en exploración/limpieza, pero no después del merge. Al establecer la relación entre los diferentes csv en el merge con validate='m:1': 1 cliente puede volar más de una vez. Resultado del merge, mismo cliente en varios vuelos. Razón: en un merge 1:m, se duplica el lado One. Duplicados “lógicos” (NO son errores), por tanto no se eliminan. 
